@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лосось & Рис — Корзина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍣 Лосось & Рис</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html" class="active">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="font-size: 32px; margin-bottom: 30px;">Ваша корзина</h1>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start;" class="cart-layout">
+            <!-- Список товаров -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="background: var(--white); padding: 20px; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="font-size: 36px; background: var(--bg-light); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 12px;">🍣</div>
+                        <div>
+                            <div style="font-weight: 600; font-size: 16px; margin-bottom: 5px;">Филадельфия Классик</div>
+                            <div style="color: var(--text-muted); font-size: 14px;">490 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="display: flex; align-items: center; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden;">
+                            <button style="border: none; background: #fff; padding: 6px 12px; cursor: pointer; font-weight: bold;">-</button>
+                            <span style="padding: 0 10px; font-weight: 600;">1</span>
+                            <button style="border: none; background: #fff; padding: 6px 12px; cursor: pointer; font-weight: bold;">+</button>
+                        </div>
+                        <button style="border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 18px; transition: var(--transition);" title="Удалить">🗑️</button>
+                    </div>
+                </div>
+
+                <div style="background: var(--white); padding: 20px; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="font-size: 36px; background: var(--bg-light); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 12px;">🔥</div>
+                        <div>
+                            <div style="font-weight: 600; font-size: 16px; margin-bottom: 5px;">Запеченный с лососем</div>
+                            <div style="color: var(--text-muted); font-size: 14px;">530 ₽</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="display: flex; align-items: center; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden;">
+                            <button style="border: none; background: #fff; padding: 6px 12px; cursor: pointer; font-weight: bold;">-</button>
+                            <span style="padding: 0 10px; font-weight: 600;">1</span>
+                            <button style="border: none; background: #fff; padding: 6px 12px; cursor: pointer; font-weight: bold;">+</button>
+                        </div>
+                        <button style="border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 18px; transition: var(--transition);" title="Удалить">🗑️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Итог заказа -->
+            <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: var(--shadow);">
+                <h3 style="font-size: 20px; margin-bottom: 20px;">Итого</h3>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 12px; color: var(--text-muted);">
+                    <span>Товары (2)</span>
+                    <span>1 020 ₽</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px; color: var(--text-muted);">
+                    <span>Доставка</span>
+                    <span>Бесплатно</span>
+                </div>
+                <hr style="border: none; border-top: 1px solid #EDF2F7; margin-bottom: 20px;">
+                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 700; margin-bottom: 30px;">
+                    <span>К оплате</span>
+                    <span style="color: var(--accent-salmon);">1 020 ₽</span>
+                </div>
+                <button class="btn" style="width: 100%; text-align: center;">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Лосось & Рис. Все права защищены.</p>
+    </footer>
+
+    <style>
+        @media (max-width: 900px) {
+            .cart-layout {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>

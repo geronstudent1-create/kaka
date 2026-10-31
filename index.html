@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лосось & Рис — Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍣 Лосось & Рис</a>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Баннер -->
+        <section style="background: linear-gradient(135deg, #E0F0FE 0%, #FFE5DE 100%); border-radius: 30px; padding: 60px 40px; display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-bottom: 50px; box-shadow: var(--shadow);">
+            <div style="max-width: 600px;">
+                <h1 style="font-size: 42px; margin-bottom: 20px; color: var(--text-main);">Свежайшие роллы с доставкой</h1>
+                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 30px; line-height: 1.6;">Нежный лосось, тающий во рту сыр и идеальный рис. Приготовим и доставим за 45 минут!</p>
+                <a href="catalog.html" class="btn">Смотреть меню</a>
+            </div>
+            <div style="font-size: 120px; animation: float 3s ease-in-out infinite;">🍱</div>
+        </section>
+
+        <!-- Популярные позиции -->
+        <section>
+            <h2 style="margin-bottom: 30px; font-size: 28px;">Популярные роллы</h2>
+            <div class="grid-catalog">
+                <div class="card">
+                    <div class="card-img">🍣</div>
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Филадельфия Классик</div>
+                            <div class="card-desc">Лосось, сливочный сыр, огурец, рис, нори.</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">490 ₽</span>
+                            <a href="catalog.html" class="btn" style="padding: 8px 16px; font-size: 14px;">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">🍥</div>
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Калифорния с лососем</div>
+                            <div class="card-desc">Лосось, авокадо, икра масаго, майонез японский.</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">420 ₽</span>
+                            <a href="catalog.html" class="btn" style="padding: 8px 16px; font-size: 14px;">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">🔥</div>
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Запеченный с лососем</div>
+                            <div class="card-desc">Острый соус, сырная шапка, лосось, унаги.</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">530 ₽</span>
+                            <a href="catalog.html" class="btn" style="padding: 8px 16px; font-size: 14px;">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Лосось & Рис. Все права защищены.</p>
+    </footer>
+
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</body>
+</html>

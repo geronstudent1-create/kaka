@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лосось & Рис — Профиль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🍣 Лосось & Рис</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html" class="active">Профиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="font-size: 32px; margin-bottom: 30px;">Личный кабинет</h1>
+
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px;" class="profile-layout">
+            <!-- Информация о пользователе -->
+            <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: var(--shadow); height: fit-content;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="font-size: 36px; background: #e0f0fe; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">🧑‍🍳</div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 18px;">Алексей</div>
+                        <div style="color: var(--text-muted); font-size: 14px;">+7 (999) 123-45-67</div>
+                    </div>
+                </div>
+                <div style="background: #FFF5F2; padding: 15px; border-radius: 12px; margin-bottom: 20px;">
+                    <div style="font-size: 13px; color: var(--accent-salmon); font-weight: 600; margin-bottom: 4px;">БОНУСНЫЙ СЧЕТ</div>
+                    <div style="font-size: 20px; font-weight: 700; color: var(--text-main);">350 баллов</div>
+                </div>
+                <button style="background: transparent; border: 1px solid #CBD5E0; color: var(--text-main); width: 100%; padding: 10px; border-radius: 10px; cursor: pointer; transition: var(--transition);">Выйти из аккаунта</button>
+            </div>
+
+            <!-- История заказов -->
+            <div style="background: var(--white); padding: 30px; border-radius: 20px; box-shadow: var(--shadow);">
+                <h3 style="font-size: 20px; margin-bottom: 20px;">История заказов</h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="border: 1px solid #EDF2F7; padding: 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; transition: var(--transition);">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Заказ #1042</div>
+                            <div style="color: var(--text-muted); font-size: 14px;">24 октября 2026 • 2 товара</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700; margin-bottom: 4px;">1 020 ₽</div>
+                            <span style="background: #E6FFFA; color: #319795; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600;">Доставлен</span>
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid #EDF2F7; padding: 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; transition: var(--transition);">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Заказ #1015</div>
+                            <div style="color: var(--text-muted); font-size: 14px;">12 октября 2026 • 1 товар</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700; margin-bottom: 4px;">490 ₽</div>
+                            <span style="background: #E6FFFA; color: #319795; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600;">Доставлен</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Лосось & Рис. Все права защищены.</p>
+    </footer>
+
+    <style>
+        @media (max-width: 900px) {
+            .profile-layout {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>
